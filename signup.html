@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>https//SeeMyBharat//register</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />   
+  </head>
+  <style>
+    body {
+      flex-direction: column;
+    }
+    nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    
+  }
+
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav .menu a:first-child {
+    color: #00b894;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  /* Responsive Styles */
+   @media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav .menu {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0; /* Adjust the margin as needed */
+  }
+
+  nav .menu a {
+    width: 100%;
+  }
+  }
+  </style>
+  <body>
+    <nav>
+      <div class="logo"> <h1 style="font-size: 20px;"> See My bharat </h1> </div>
+      <div class="menu">
+        <a href="Home.html" target="blank">Home</a>
+        <a href="https://www.makemytrip.com/tripideas/tourist-attractions">Visit Places</a>
+        <a href="https://www.shutterstock.com/search/india-travel-photography">See Photos</a>
+        <a href="https://www.linkedin.com/in/ambikesh-jha/">my profile</a>
+      </div>
+    </nav>
+    <section class="container">
+      <header><u>Register Here </u></header>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label><b>Name</b> </label>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+
+          <div class="input-box">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <label><b>Phone Number</b></label>
+              <input type="number" placeholder="Enter phone no." required />
+            </div>
+
+            <div class="input-box">
+              <label><b>Birth Date</b></label>
+                <input type="date" placeholder="Enter DOB" required />
+            </div>
+          </div>
+
+          <div class="gender-box">
+            <h3><b>Gender</b></h3>
+              <div class="gender-option">
+                  <div class="gender">
+                    <input type="radio" id="check-male" name="gender" checked />
+                    <label for="check-male">male</label>
+                  </div>
+                  <div class="gender">
+                    <input type="radio" id="check-female" name="gender" />
+                    <label for="check-female">Female</label>
+                  </div>
+                  <div class="gender">
+                    <input type="radio" id="check-other" name="gender" />
+                    <label for="check-other">prefer not to say</label>
+                  </div>
+              </div>
+          </div>
+
+          <div class="input-box address">
+            <label><b>Address</b></label>
+              <input type="text" placeholder="Enter your address" required />
+            
+            <div class="column">
+              <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>China</option>
+                <option>Russia</option>
+              </select>
+
+              </div>
+                <input type="text" placeholder="Enter city" required />
+              </div>
+
+              <div class="column">
+                <input type="text" placeholder="Enter region" required />
+                <input type="number" placeholder="Enter pin code" required />
+              </div>
+
+            </div>
+            <br>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy*</a>.</p>
+            <button type="submit" class="registerbtn">Register</button>
+        </form>
+    </section>
+  </body>
+</html>
